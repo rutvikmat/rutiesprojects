@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43177044-7d1b-4090-8099-5b0ada6bf18c" name="Changes" comment="new mini py" />
+    <list default="true" id="43177044-7d1b-4090-8099-5b0ada6bf18c" name="Changes" comment="new mini py">
+      <change afterPath="$PROJECT_DIR$/projects/Chat Application (Socket Programming)/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Chat Application (Socket Programming)/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Currency Converter (API Integration)/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Currency Converter (API Integration)/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Email Automation Script/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Email Automation Script/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Expense Tracker/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Expense Tracker/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Library Management System/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Library Management System/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Markdown to PDF Converter/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Markdown to PDF Converter/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Text Encryption &amp; Decryption Tool/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Text Encryption &amp; Decryption Tool/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/URL Shortener/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/URL Shortener/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/Voice Assistant using Speech Recognition/voice_assistant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,11 +54,13 @@
   "keyToString": {
     "Python. AlarmClock.executor": "Run",
     "Python.WeatherApp.executor": "Run",
+    "Python.app.executor": "Run",
     "Python.calculator.executor": "Run",
     "Python.contacts.executor": "Run",
     "Python.game.executor": "Run",
     "Python.notepad.executor": "Run",
     "Python.todo.executor": "Run",
+    "Python.voice_assistant.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master"
@@ -69,7 +90,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757094187377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new mini py">
+      <option name="closed" value="true" />
+      <created>1757094308232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757094308232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new mini py">
+      <option name="closed" value="true" />
+      <created>1757094452711</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757094452711</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

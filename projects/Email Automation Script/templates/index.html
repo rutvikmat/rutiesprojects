@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Sender</title>
+</head>
+<body>
+    <h1>Send an Email</h1>
+    <form method="POST">
+        <input type="email" name="recipient" placeholder="Recipient's Email" required><br><br>
+        <input type="text" name="subject" placeholder="Subject" required size="50"><br><br>
+        <textarea name="body" placeholder="Email Body" rows="10" cols="50" required></textarea><br><br>
+        <button type="submit">Send Email</button>
+    </form>
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+</html>

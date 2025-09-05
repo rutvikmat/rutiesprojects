@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encryption/Decryption Tool</title>
+</head>
+<body>
+    <h1>Text Encryption & Decryption Tool</h1>
+    <form method="POST">
+        <textarea name="text" rows="8" cols="60" placeholder="Enter text here">{{ original_text }}</textarea><br><br>
+        <button type="submit" name="action" value="encrypt">Encrypt</button>
+        <button type="submit" name="action" value="decrypt">Decrypt</button>
+    </form>
+
+    {% if processed_text %}
+        <h2>Result:</h2>
+        <textarea rows="8" cols="60" readonly>{{ processed_text }}</textarea>
+    {% endif %}
+</body>
+</html>

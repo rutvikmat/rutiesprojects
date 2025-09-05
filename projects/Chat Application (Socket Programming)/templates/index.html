@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Simple Chat Room</h1>
+    <div id="messages" style="height: 300px; border: 1px solid #ccc; overflow-y: scroll; padding: 10px;"></div>
+    <br>
+    <input type="text" id="username" placeholder="Username">
+    <input type="text" id="message_input" placeholder="Type a message...">
+    <button id="send_button">Send</button>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+            socket.on('connect', function() {
+                console.log('Connected to server!');
+            });
+
+            socket.on('message', function(msg) {
+                $('#messages').append($('<div>').text(msg));
+                // Auto-scroll to the bottom
+                $('#messages').scrollTop($('#messages')[0].scrollHeight);
+            });
+
+            $('#send_button').on('click', function() {
+                var username = $('#username').val();
+                var message = $('#message_input').val();
+                if (username && message) {
+                    socket.send(username + ': ' + message);
+                    $('#message_input').val('');
+                } else {
+                    alert('Please enter a username and a message.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
