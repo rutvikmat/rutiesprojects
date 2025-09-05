@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43177044-7d1b-4090-8099-5b0ada6bf18c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rutiesprojects.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ Alarm Clock/ AlarmClock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Basic Notepad Application/notepad.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Basic Notepad Application/notepad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Contact Book App/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Contact Book App/contacts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Guess the Number Game/game.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Guess the Number Game/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Quiz Application/QuizApplication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Quiz Application/quiz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Rock Paper Scissors Game /game.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Rock Paper Scissors Game /game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/SimpleCalculatorwithGUI/calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/SimpleCalculatorwithGUI/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/SimpleCalculatorwithGUI/user manul.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/To-Do List Application/todo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/To-Do List Application/todo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Unit Converter/UnitConverter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Unit Converter/unitconverter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Weather App/WeatherApp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Weather App/weatherapp.html" afterDir="false" />
-    </list>
+    <list default="true" id="43177044-7d1b-4090-8099-5b0ada6bf18c" name="Changes" comment="new mini py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +61,20 @@
       <option name="presentableId" value="Default" />
       <updated>1757086032783</updated>
     </task>
+    <task id="LOCAL-00001" summary="new mini py">
+      <option name="closed" value="true" />
+      <created>1757094187377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757094187377</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new mini py" />
+    <option name="LAST_COMMIT_MESSAGE" value="new mini py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
