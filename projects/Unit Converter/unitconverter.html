@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; background-color: #f4f4f9; }
+        .converter { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        select, input { padding: 10px; margin: 5px; font-size: 1em; }
+        #result { margin-top: 20px; font-size: 1.2em; font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="converter">
+        <h2>Unit Converter</h2>
+        <input type="number" id="inputValue" placeholder="Enter value" oninput="convert()">
+        <select id="fromUnit" onchange="convert()"></select>
+        <span>to</span>
+        <select id="toUnit" onchange="convert()"></select>
+        <div id="result">Result:</div>
+    </div>
+
+    <script>
+        const unitFactors = {
+            length: { meters: 1, kilometers: 1000, miles: 1609.34, feet: 0.3048 },
+            weight: { grams: 1, kilograms: 1000, pounds: 453.592, ounces: 28.3495 }
+        };
+
+        const fromUnit = document.getElementById('fromUnit');
+        const toUnit = document.getElementById('toUnit');
+        // Populate dropdowns - using length as default
+        Object.keys(unitFactors.length).forEach(unit => {
+            fromUnit.innerHTML += `<option value="${unit}">${unit}</option>`;
+            toUnit.innerHTML += `<option value="${unit}">${unit}</option>`;
+        });
+        toUnit.value = "kilometers"; // Set a different default
+
+        function convert() {
+            const inputValue = parseFloat(document.getElementById('inputValue').value);
+            const from = fromUnit.value;
+            const to = toUnit.value;
+            const resultDiv = document.getElementById('result');
+
+            if (isNaN(inputValue)) {
+                resultDiv.textContent = "Result:";
+                return;
+            }
+
+            // Using length for this example, a real app would have a category selector
+            const factors = unitFactors.length;
+            const baseValue = inputValue * factors[from];
+            const result = baseValue / factors[to];
+
+            resultDiv.textContent = `Result: ${result.toFixed(4)} ${to}`;
+        }
+    </script>
+</body>
+</html>

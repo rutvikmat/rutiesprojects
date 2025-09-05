@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; background: #fafafa; }
+        .container { width: 400px; }
+        form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        input { width: calc(100% - 20px); padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        #contactList { list-style: none; padding: 0; margin-top: 20px; }
+        #contactList li { background: #fff; padding: 15px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+        .delete-btn { color: red; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Book</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <input type="email" id="email" placeholder="Email">
+            <button type="submit">Add Contact</button>
+        </form>
+        <ul id="contactList"></ul>
+    </div>
+
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const contactList = document.getElementById('contactList');
+
+        // Load contacts from localStorage or initialize an empty array
+        let contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+
+        function renderContacts() {
+            contactList.innerHTML = '';
+            contacts.forEach((contact, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <div>
+                        <strong>${contact.name}</strong><br>
+                        <small>${contact.phone} | ${contact.email}</small>
+                    </div>
+                    <span class="delete-btn" onclick="deleteContact(${index})">X</span>
+                `;
+                contactList.appendChild(li);
+            });
+        }
+
+        function saveContacts() {
+            localStorage.setItem('contacts', JSON.stringify(contacts));
+        }
+
+        function deleteContact(index) {
+            contacts.splice(index, 1);
+            saveContacts();
+            renderContacts();
+        }
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const newContact = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+            };
+            contacts.push(newContact);
+            saveContacts();
+            renderContacts();
+            contactForm.reset();
+        });
+
+        // Initial render
+        renderContacts();
+    </script>
+</body>
+</html>

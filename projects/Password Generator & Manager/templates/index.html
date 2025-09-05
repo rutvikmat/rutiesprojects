@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator & Manager</title>
+    <style> body { font-family: sans-serif; container { max-width: 600px; margin: auto; padding: 20px; } } </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator & Manager</h1>
+
+        <form method="POST" action="/">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" name="length" value="12" min="8">
+            <button type="submit">Generate Password</button>
+        </form>
+
+        {% if generated_password %}
+            <h3>Your New Password:</h3>
+            <p><b>{{ generated_password }}</b></p>
+
+            <form method="POST" action="/save">
+                <input type="hidden" name="password" value="{{ generated_password }}">
+                <label for="service">Service/Website:</label>
+                <input type="text" id="service" name="service" required>
+                <button type="submit">Save Password</button>
+            </form>
+        {% endif %}
+
+        <hr>
+        <h2>Saved Passwords</h2>
+        <ul>
+            {% for p in saved_passwords %}
+                <li>{{ p.strip() }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

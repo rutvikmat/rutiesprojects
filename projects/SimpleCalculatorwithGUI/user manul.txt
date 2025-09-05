@@ -1,0 +1,101 @@
+Simple Calculator: User Manual 📝
+Welcome to the Simple Calculator! This guide will help you understand how to use the application to perform basic arithmetic calculations quickly and easily.
+
+1. Getting Started
+System Requirements
+You need Python 3 installed on your system (Windows, macOS, or Linux).
+
+The Tkinter library is also required, but it comes standard with most Python 3 installations, so you likely don't need to install anything extra.
+
+Launching the Application
+Make sure you have the application file saved as calculator.py.
+
+Open your system's terminal (Command Prompt on Windows, Terminal on macOS/Linux).
+
+Navigate to the folder where you saved calculator.py using the cd command.
+
+Type the following command and press Enter:
+
+Bash
+
+python calculator.py
+The calculator window will appear on your screen, ready to use!
+
+2. Interface Overview
+The calculator has a very simple and intuitive interface:
+
+Display Screen: The rectangular box at the very top of the window. This is where the numbers you enter and the results of your calculations are shown.
+
+Number Buttons (0-9): A standard numeric keypad for entering numbers.
+
+Operator Buttons (+, -, *, /): Buttons for the four basic arithmetic operations:
+
++ (Addition)
+
+- (Subtraction)
+
+* (Multiplication)
+
+/ (Division)
+
+Special Function Buttons:
+
+. (Decimal Point): Use this to enter floating-point numbers (e.g., 3.14).
+
+C (Clear): Wipes the display screen and resets the current calculation.
+
+= (Equals): Computes the result of the expression you have entered.
+
+3. How to Perform Calculations
+Using the calculator is straightforward. Just click the buttons in the order you would write the calculation.
+
+Basic Examples:
+To add 75 and 10:
+
+Click 7, then 5.
+
+Click the + button.
+
+Click 1, then 0.
+
+Click the = button.
+
+The display will show the result: 85.
+
+To calculate 9 multiplied by 6:
+
+Click 9.
+
+Click the * button.
+
+Click 6.
+
+Click =.
+
+The display will show: 54.
+
+Chaining Operations:
+You can perform a sequence of operations, and the calculator will evaluate them when you press equals.
+
+To calculate 100 - 20 + 5:
+
+Enter 100.
+
+Click -.
+
+Enter 20.
+
+Click +.
+
+Enter 5.
+
+Click =.
+
+The display will show the result: 85.
+
+4. Error Handling
+The calculator will notify you if you enter an invalid calculation.
+
+If you try to divide by zero (e.g., 5 / 0) or enter an incomplete expression (e.g., 8 *), pressing the = button will cause the display to show "Error".
+
+To fix this, simply press the C (Clear) button to reset the display and start a new calculation.
