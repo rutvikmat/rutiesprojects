@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Your Shopping Cart</h1>
+    {% if cart_items %}
+        <table border="1" cellpadding="5">
+            <tr><th>Product</th><th>Quantity</th><th>Price</th><th>Total</th></tr>
+            {% for id, item in cart_items.items() %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>${{ item.price }}</td>
+                <td>${{ item.total }}</td>
+            </tr>
+            {% endfor %}
+            <tr><td colspan="3"><b>Grand Total</b></td><td><b>${{ total_price }}</b></td></tr>
+        </table>
+        <br>
+        <a href="{{ url_for('clear_cart') }}">Clear Cart</a>
+    {% else %}
+        <p>Your cart is empty.</p>
+    {% endif %}
+{% endblock %}

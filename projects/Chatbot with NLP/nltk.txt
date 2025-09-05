@@ -1,0 +1,9 @@
+29. Chatbot with NLP 🤖
+A simple web-based chatbot that uses NLTK and regular expressions to respond to user inputs based on a set of predefined rules.
+
+Setup: This project requires NLTK data. Run this in a Python shell once:
+
+Python
+
+import nltk
+nltk.download('punkt')

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask E-commerce</title>
+    <style> body { font-family: sans-serif; } nav a { margin-right: 15px; } </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Products</a> |
+        <a href="{{ url_for('view_cart') }}">Cart</a>
+    </nav>
+    <hr>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <p style="color: {{ 'green' if category == 'success' else 'blue' }};">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+</body>
+</html>

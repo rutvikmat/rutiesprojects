@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>All Student Results</h1>
+    <table border="1" cellpadding="5">
+        <tr><th>Student Name</th><th>Subject</th><th>Marks</th></tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.name }}</td>
+            <td>{{ result.subject }}</td>
+            <td>{{ result.marks }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="3">No results found.</td></tr>
+        {% endfor %}
+    </table>
+{% endblock %}

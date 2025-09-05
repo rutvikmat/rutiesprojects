@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result System</title>
+</head>
+<body>
+    <nav><a href="{{ url_for('index') }}">View Results</a> | <a href="{{ url_for('add_result') }}">Add Result</a></nav>
+    <hr>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}{% for category, message in messages %}
+            <p style="color: green;">{{ message }}</p>
+        {% endfor %}{% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+</body>
+</html>

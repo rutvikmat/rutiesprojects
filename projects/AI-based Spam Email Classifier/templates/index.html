@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Email Classifier</title>
+</head>
+<body>
+    <h1>Is this Email Spam?</h1>
+    <p>Paste the content of an email below to classify it.</p>
+    <form method="POST">
+        <textarea name="email_text" rows="15" cols="80" required>{{ email_text }}</textarea><br><br>
+        <button type="submit">Classify Email</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: <span style="color: {{ 'red' if prediction == 'SPAM' else 'green' }};">{{ prediction }}</span></h2>
+    {% endif %}
+</body>
+</html>

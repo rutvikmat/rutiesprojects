@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask Blog</title>
+    <style> body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; } </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a> |
+        <a href="{{ url_for('new_post') }}">New Post</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

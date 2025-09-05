@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting System</title>
+</head>
+<body>
+    <h1>Online Voting System</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div style="color: {{ 'green' if category == 'success' else 'red' }};">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% if not has_voted %}
+        <h2>Cast Your Vote</h2>
+        <form method="POST">
+            {% for candidate in candidates.keys() %}
+                <input type="radio" name="candidate" value="{{ candidate }}" id="{{ candidate }}">
+                <label for="{{ candidate }}">{{ candidate }}</label><br>
+            {% endfor %}
+            <br>
+            <button type="submit">Vote</button>
+        </form>
+    {% else %}
+        <p>You have already cast your vote.</p>
+    {% endif %}
+
+    <hr>
+    <h2>Current Results</h2>
+    <ul>
+        {% for candidate, votes in candidates.items() %}
+            <li>{{ candidate }}: {{ votes }} votes</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NLP Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #chatbox { height: 300px; border: 1px solid #ccc; padding: 10px; overflow-y: scroll; }
+        .user-msg { text-align: right; color: blue; }
+        .bot-msg { text-align: left; color: green; }
+    </style>
+</head>
+<body>
+    <h1>Chat with our Bot</h1>
+    <div id="chatbox"></div>
+    <input type="text" id="userInput" size="50" placeholder="Type your message here...">
+    <button id="sendBtn">Send</button>
+
+    <script>
+        document.getElementById('sendBtn').addEventListener('click', sendMessage);
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') { sendMessage(); }
+        });
+
+        async function sendMessage() {
+            const userInput = document.getElementById('userInput');
+            const message = userInput.value.trim();
+            if (message === '') return;
+
+            // Display user message
+            addMessage(message, 'user-msg');
+            userInput.value = '';
+
+            // Get bot response
+            const response = await fetch('/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: message })
+            });
+            const data = await response.json();
+            addMessage(data.response, 'bot-msg');
+        }
+
+        function addMessage(text, className) {
+            const chatbox = document.getElementById('chatbox');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = className;
+            msgDiv.textContent = text;
+            chatbox.appendChild(msgDiv);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+    </script>
+</body>
+</html>

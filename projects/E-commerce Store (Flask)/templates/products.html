@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Products</h1>
+    <div style="display: flex; gap: 20px;">
+    {% for id, product in products.items() %}
+        <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+            <img src="{{ product.image }}" alt="{{ product.name }}">
+            <h3>{{ product.name }}</h3>
+            <p>${{ product.price }}</p>
+            <a href="{{ url_for('add_to_cart', product_id=id) }}">Add to Cart</a>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
