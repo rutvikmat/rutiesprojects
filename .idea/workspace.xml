@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43177044-7d1b-4090-8099-5b0ada6bf18c" name="Changes" comment="new mini py">
-      <change afterPath="$PROJECT_DIR$/projects/Blog Website using Flask/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Blog Website using Flask/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Blog Website using Flask/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Blog Website using Flask/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Blog Website using Flask/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Chatbot with NLP/NLTK.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Chatbot with NLP/nlt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/E-commerce Store (Flask)/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/E-commerce Store (Flask)/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/E-commerce Store (Flask)/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/E-commerce Store (Flask)/templates/products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Face Detection using OpenCV/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Face Detection using OpenCV/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Handwritten Digit Recognition (ML)/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Handwritten Digit Recognition (ML)/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Handwritten Digit Recognition (ML)/train_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Movie Recommendation System (ML)/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Movie Recommendation System (ML)/movies.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Movie Recommendation System (ML)/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Online Voting System/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Online Voting System/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Student Result Management System/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Student Result Management System/templates/add_result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Student Result Management System/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Student Result Management System/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Web Scraper for Job Listings/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/Web Scraper for Job Listings/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/logo to video/logo.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/logo to video/logo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +29,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "rutvikmat"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/rutvikmat/rutiesprojects",
+    "accountId": "243847b5-f386-41c0-881b-584a73a711f3"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -65,23 +52,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python. AlarmClock.executor": "Run",
-    "Python.WeatherApp.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.calculator.executor": "Run",
-    "Python.contacts.executor": "Run",
-    "Python.game.executor": "Run",
-    "Python.notepad.executor": "Run",
-    "Python.todo.executor": "Run",
-    "Python.voice_assistant.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python. AlarmClock.executor&quot;: &quot;Run&quot;,
+    &quot;Python.WeatherApp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calculator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.contacts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.notepad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.todo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.voice_assistant.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/rutiesprojects/projects/logo to video&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\rutiesprojects\projects\logo to video" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -138,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757096783483</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new mini py">
+      <option name="closed" value="true" />
+      <created>1757098913610</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1757098913610</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
